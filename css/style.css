@@ -200,3 +200,111 @@ main{
 .trending-down{
     background: url(../assets/icons/trending-down.svg);
 }
+
+
+.tables-container__currency-table, .tables-container__commissions-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 270px;
+    margin: 0 auto;
+    font-family: var(--secondary-family-font);
+}
+
+.exchange-container__tables-container .currency-table--title,
+.exchange-container__tables-container .commissions-table--title{
+    padding: 0 30px;
+    font-size: 1.8rem;
+    font-family: var(--primary-font-family);
+    font-weight: var(--weight-bold);
+    line-height: 2.3rem;
+    text-align: start;
+    color: #FF9536;
+}
+.exchange-container__tables-container .commissions-table--title{
+    color: var(--secondary-blue);
+}
+.currency-table__container, .commissions-table__container{
+    width: 197px;
+    height:159px;
+    margin: 16px auto;
+}
+
+.currency-table__container table, .commissions-table__container table{
+    width: 100%;
+    height: 100%;
+}
+
+.currency-table__container td, .commissions-table__container td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: var(--weight-normal);
+    line-height: 1.7rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+    padding: 10px 12px;
+    line-height: 1.9rem;
+}
+
+.currency-table__container .table--top-left{
+    border-radius: 15px 0 0 0;
+}
+.currency-table__container .table--top-right{
+    border-radius: 0 15px 0 0;
+}
+.currency-table__container .table--bottom-right{
+    border-radius:  0 0 15px 0;
+}
+.currency-table__container .table--bottom-left{
+    border-radius:  0 0 0 15px;
+}
+.currency-table__container .table--right{
+    padding: 11px 12px;
+    font-size: var(--normal-mobile-size);
+    font-weight: var(--weight-thin);
+    color: #757575;
+    
+}
+
+.commissions-table__date, .currency-table__date{
+    width: 190px;
+    height: 31px;
+    margin: 30px auto 0; 
+    padding: 8px;
+    text-align: center;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+.currency-table__date{
+    background-color: var(--soft-orange);
+}
+.currency-table__date p, .commissions-table__date p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: var(--weight-thin);
+    color: var(--warm-black);
+}
+.main__product-detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--black);
+}
+.batatabit-icon-right{
+    position: relative;
+    bottom:10px ;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    background: url("../assets/icons/batabit-icon-right.svg");
+}
+
+.main__product-detail h2{
+    width: 80%;
+    font-size: var(--h1-mobile-size);
+    font-weight: var(--weight-bold);
+    line-height: var(--h1-mobile-lineheight);
+    text-align: center;
+    color: var(--just-white);
+}
