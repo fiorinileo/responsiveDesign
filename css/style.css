@@ -286,25 +286,39 @@ main{
     color: var(--warm-black);
 }
 .main__product-detail{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 16px;
     background-color: var(--black);
 }
 .batatabit-icon-right{
     position: relative;
-    bottom:10px ;
+    bottom:12px;
+    bottom:30px ;
+    left: calc(50% - 20px);
     display: inline-block;
     width: 40px;
     height: 24px;
-    background: url("../assets/icons/batabit-icon-right.svg");
+    background-image: url("../assets/icons/batabit-icon-right.svg");
 }
-
-.main__product-detail h2{
-    width: 80%;
+.product-detail--tittle{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 20px auto 0;
+    text-align: center;
+    color: var(--just-white);
+}
+.product-detail--tittle h2{
     font-size: var(--h1-mobile-size);
     font-weight: var(--weight-bold);
     line-height: var(--h1-mobile-lineheight);
-    text-align: center;
-    color: var(--just-white);
+    margin-bottom: 24px;
+}
+.product-detail--tittle p{
+    font-size: var(--normal-mobile-size);
+    color: #808080;
+    margin-bottom: 32px;
 }
