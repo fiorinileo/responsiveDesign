@@ -290,7 +290,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: auto;
-    padding: 20px 16px;
+    padding: 20px 16px 32px;
     background-color: var(--black);
 }
 .batatabit-icon-right{
@@ -321,4 +321,65 @@ main{
     font-size: var(--normal-mobile-size);
     color: #808080;
     margin-bottom: 32px;
+}
+.card-icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom:10px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clock{
+    background-image: url("../assets/icons/clock.svg");  
+}
+.eye{
+    background-image: url("../assets/icons/eye.svg");
+}
+.dollar-sing{
+    background-image: url("../assets/icons/dollar-sign.svg");
+}
+.check-circle{
+    background-image: url("../assets/icons/check-circle.svg");
+}
+.cards-container__card{
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 16px;
+    background-color: var(--warm-black);
+    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.16) ;
+    border-radius: 4px;
+}
+.cards-container__card .card--tittle{
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: var(--weight-bold);
+    color: var(--just-white);
+}
+.cards-container__card .card--body{
+    margin-bottom: 10px;
+    font-size: var(--normal-mobile-size);
+    line-height: 1.8rem;
+    font-weight: var(--weight-normal);
+    color: #808080;
+}
+
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 387px;
+    background-image: url("../assets/images/bitcoinbaby.jpg");
+    background-repeat: no-repeat;
+}
+.bitcoin-img-container h2{
+    position: relative;
+    top: 62px;
+    color: var(--just-white);
+    font-size: var(--h1-mobile-size);
+    line-height: 2.6rem;
+    text-align: center;
 }
