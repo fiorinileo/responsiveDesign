@@ -208,9 +208,18 @@ main{
     min-width: 235px;
     max-width: 500px;
     height: 270px;
-    margin: 0 auto;
+    margin: 0 calc(50% - 120px);
+    scroll-snap-align: center;
     font-family: var(--secondary-family-font);
 }
+.exchange-container__tables-container{
+    display: flex;
+    height: 290px ;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 
 .exchange-container__tables-container .currency-table--title,
 .exchange-container__tables-container .commissions-table--title{
@@ -375,6 +384,8 @@ main{
     height: 387px;
     background-image: url("../assets/images/bitcoinbaby.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
 }
 .bitcoin-img-container h2{
     position: relative;
