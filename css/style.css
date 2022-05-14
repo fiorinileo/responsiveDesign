@@ -70,6 +70,7 @@
 html{
     font-size: 62.5%;
     font-family: var(--primary-family-font);
+    scroll-behavior: smooth;
 }
 header{
     position: relative;
@@ -303,7 +304,7 @@ main{
     height: 24px;
     background-image: url("../assets/icons/batabit-icon-right.svg");
 }
-.product-detail--tittle{
+.product-detail--tttle{
     width: 90%;
     min-width: 288px;
     height: auto;
@@ -311,13 +312,13 @@ main{
     text-align: center;
     color: var(--just-white);
 }
-.product-detail--tittle h2{
+.product-detail--title h2{
     font-size: var(--h1-mobile-size);
     font-weight: var(--weight-bold);
     line-height: var(--h1-mobile-lineheight);
     margin-bottom: 24px;
 }
-.product-detail--tittle p{
+.product-detail--tttle p{
     font-size: var(--normal-mobile-size);
     color: #808080;
     margin-bottom: 32px;
@@ -353,7 +354,7 @@ main{
     box-shadow:0px 4px 8px rgba(0, 0, 0, 0.16) ;
     border-radius: 4px;
 }
-.cards-container__card .card--tittle{
+.cards-container__card .card--title{
     margin-bottom: 10px;
     font-size: 1.8rem;
     line-height: 1.8rem;
@@ -382,4 +383,165 @@ main{
     font-size: var(--h1-mobile-size);
     line-height: 2.6rem;
     text-align: center;
+}
+
+.main__plans{
+    height: auto;
+    margin: auto;
+    padding: 62px 0;
+    text-align: center;
+}
+
+.plans__title h2{
+    font-size: var(--h1-mobile-size);
+    font-weight: var(--weight-bold);
+    line-height: 2.6rem;
+}
+.plans__title > p{
+    margin-top: 24px;
+    font-size: var(--normal-mobile-size) ;
+    font-weight: var(--weight-normal);
+    line-height: 1.8rem;
+    color: #757575;
+}
+.slider__card-container{
+    position: relative;
+}
+.slider__card-container > p{
+    position: absolute;
+    left: calc(50% - 49.32px);
+    top:24px;
+    padding: 8px;
+    font-family: var(--secondary-family-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 8px;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange) ;
+ 
+}
+.card-container__card{
+    scroll-snap-align: center;
+    height: 247px;
+    width: 60%;
+    min-width: 190px;
+    max-width: 300px;
+    margin:  40px 15px;
+    padding: 20px;
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+}
+
+.card-container__card h3{
+    margin: 10px;
+    font-family: var(--primary-family-font);
+    font-style: normal;
+    font-weight: var(--weight-normal);
+    font-size: var(--normal-mobile-size) ;
+    line-height: 1.8rem;
+    color: #000000;
+}
+.card-container__card .card--price{
+    font-family: var(--secondary-family-font);
+    font-weight: var(--weight-bold);
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    letter-spacing: -0.08em;
+}
+
+.card-container__card .card--detail{
+    margin-top: 8px;
+    font-family: var(--secondary-family-font);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #757575;
+}
+.card--price sup{
+    position: relative;
+    left: 5px;
+    top: -5px;
+    font-size: 12px ;
+}
+.plans__slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.card-container__card button{
+    margin-top: 16px;
+    width: 151px;
+    height: 48px;
+    font-family: var(--primary-family-font);
+    font-weight: var(--weight-bold);
+    font-size: var(--normal-mobile-size);
+    color: var(--warm-black);
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+}
+.arrow-right{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/icons/arrow-right.svg);
+    vertical-align: text-bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+footer{
+    padding: 50px 60px;
+    display: flex;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.footer__links{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__links a{
+    display: inline-block;
+    width: 100%;
+    margin: 4px;
+    font-family: var(--primary-family-font);
+    font-style: normal;
+    font-weight: var(--weight-normal);
+    font-size: var(--normal-mobile-size);
+    line-height: 1.8rem;
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+.footer__brand figcaption{
+    font-size: 8px;
+    text-align: center;
+    color: var(--soft-orange);
+}
+.footer__brand picture{
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.footer__brand div{
+    width: 100%;
+    height: 100%;
+}
+.footer__brand img{
+    width: 40px;
+    height: 24px;
 }
